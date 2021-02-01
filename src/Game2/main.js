@@ -7,3 +7,8 @@ const answerArray = [
 const message = document.querySelector(".message");
 const question = document.querySelector("input");
 const ask = document.querySelector("button");
+ask.addEventListener("click", function () {
+  let res = Math.floor(Math.random() * answerArray.length);
+  message.innerText = question.value + " " + answerArray[res];
+  question.value = "";
+});
