@@ -19,7 +19,6 @@ function maker() {
     el.min = 0;
     el.order = 1;
     el.size = 1;
-    el.style.width = "50px";
     el.classList.add("numb");
     gameArea.appendChild(el);
   }
